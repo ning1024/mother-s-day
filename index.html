@@ -3,6 +3,7 @@
         <title>母亲节快乐</title>
         <meta charset="utf-8">
         <meta name="viewport" content="width=device-width，initial-scale=1.0">
+        <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
         <style type="text/css">
             *{
                 margin: 0;
@@ -20,9 +21,9 @@
             .main{
                 background-color: pink;
             }
-            h2{
+            h1{
                 color: #fff;
-                animation: text 5s linear;
+                /*animation: text 5s linear;*/
             }
             @keyframes text{
                 0%{
@@ -41,14 +42,14 @@
                     opacity: 1;
                 }
             }
+            .animate__animated.animate__zoomInDown {
+                --animate-duration: 3s;
+            }
         </style>
     </head>
     <body>
-        <!-- <div class="main">
-            
-        </div> -->
         <canvas id="myCanvas" width="1000" height="600"></canvas>
-        <h2>母亲节快乐❤</h2>
+        <h1 class="animate__animated animate__zoomInDown">母亲节快乐</h1>
         <script type="text/javascript">
             window.addEventListener("load",function(){
                 var myCanvas = document.getElementById("myCanvas");
